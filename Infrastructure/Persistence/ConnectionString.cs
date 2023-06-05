@@ -4,15 +4,15 @@ namespace Infrastructure.Persistence;
 
 public static class ConnectionString
 {
-    private static string DatabaseServer = "localhost";
+    private static string DatabaseServer = "";
 
-    private static string DatabasePort = "1433";
+    private static string DatabasePort = "";
 
-    private static string DatabaseName = "TradingNews";
+    private static string DatabaseName = "";
 
-    private static string DatabaseUser = "sa";
+    private static string DatabaseUser = "";
 
-    private static string DatabasePassword = "Password123";
+    private static string DatabasePassword = "";
 
     public static string BuildConnection()
     {

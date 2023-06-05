@@ -22,9 +22,9 @@ public class NewsArticle
 
     public ICollection<Ticker> Tickers { get; set; } = new List<Ticker>();
 
-    public Uri ImageUrl { get; set; }
+    public Uri? ImageUrl { get; set; }
 
-    public string Description { get; set; }
+    public string? Description { get; set; }
 
     public ICollection<Keyword> Keywords { get; set; } = new List<Keyword>();
 

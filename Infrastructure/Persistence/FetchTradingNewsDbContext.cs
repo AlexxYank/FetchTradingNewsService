@@ -13,7 +13,8 @@ public class FetchTradingNewsDbContext : DbContext
 	}
 
     public DbSet<NewsArticle> NewsArticles { get; set; }
-    
+    public DbSet<Subscription> Subscriptions { get; set; }
+
     protected override void OnModelCreating(ModelBuilder builder)
     {
         builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
