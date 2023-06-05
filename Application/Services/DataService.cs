@@ -5,6 +5,9 @@ using Domain.Models;
 
 namespace Application.Services;
 
+/// <summary>
+/// Fetch data from Api, Deserialize json and mapps the data to entity class, stores the data in Database
+/// </summary>
 public class DataService : IDataService
 {
     private readonly IGenericRepository<NewsArticle> _newsArticleRepository;

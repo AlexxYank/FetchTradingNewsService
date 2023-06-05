@@ -22,12 +22,10 @@
   <ItemGroup>
     <None Remove="Extensions\" />
     <None Remove="Persistence\" />
-    <None Remove="Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Extensions\" />
     <Folder Include="Persistence\" />
-    <Folder Include="Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

@@ -6,18 +6,15 @@ using Domain.Models;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 
-namespace Common.Helpers
+namespace Common.Helpers;
+
+public static class JsonHelper
 {
-	public static class JsonHelper
+	public static RootResponse DeserializeJson(string json)
 	{
-		public static RootResponse DeserializeJson(string json)
-		{
-            RootResponse article = JsonConvert.DeserializeObject<RootResponse>(json);
+        RootResponse article = JsonConvert.DeserializeObject<RootResponse>(json);
 
-            return article;
-        }
-
-
+        return article;
     }
 }
 

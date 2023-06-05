@@ -6,6 +6,9 @@ using Microsoft.Extensions.Logging;
 
 namespace Application.Services;
 
+/// <summary>
+/// Activates a trigger on every hour and executes FetchAndStoreData() from the DataService
+/// </summary>
 public class NewsBackgroundService : INewsBackgroundService, IHostedService
 {
     private Timer _timer;

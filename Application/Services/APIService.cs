@@ -7,6 +7,9 @@ using Domain.Models;
 
 namespace Application.Services;
 
+/// <summary>
+/// Requests data from Api
+/// </summary>
 public class ApiService : IApiService
 {
     private readonly HttpClient _httpClient;
@@ -21,8 +24,8 @@ public class ApiService : IApiService
     {
         try
         {
-            string apiUrl = AppConstants.EnvironmentVariables.ApiNews.Url
-                + AppConstants.EnvironmentVariables.ApiNews.Key;
+            string apiUrl = AppConstants.EnvironmentVariables.PolygonApi.Url
+                + AppConstants.EnvironmentVariables.PolygonApi.Key;
 
             HttpResponseMessage response = await _httpClient.GetAsync(apiUrl);
 
