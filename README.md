@@ -24,14 +24,15 @@ This solution provides components and services for fetching trading news, enrich
 
 Pros:
 
-- Provides a centralized web API for accessing and managing news data.
-- Separation of concerns with distinct service components.
-- Easy scalability and extensibility with API endpoints.
+- Centralized data fetching and storage.
+- Background service for regular data fetch.
+- Enriches data and stores it in a separate service.
 
 Cons:
 
-- Requires additional development for API endpoints and authorization.
-- May require additional setup and configuration for hosting the API.
+- Limited focus, lacks API functionality.
+- No direct access for clients to retrieve data.
+- No built-in subscription management functionality.
 
 ## Dependencies
 
