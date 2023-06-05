@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.Http;
 using Application.Interfaces;
+using Common.Constants;
 using Common.Helpers;
 using Domain.Models;
 
@@ -8,7 +9,6 @@ namespace Application.Services;
 
 public class ApiService : IApiService
 {
-    
     private readonly HttpClient _httpClient;
 
     public ApiService()
@@ -17,14 +17,14 @@ public class ApiService : IApiService
         _httpClient = new HttpClient();
     }
 
-    public async Task<string> GetDataFromApi()
+    public async Task<string> FetchDataFromApi()
     {
         try
         {
-            string apiUrl = "https://api.polygon.io/v2/reference/news";
-            string apiKey = "?apiKey=oLwXbx8i6SDnIEJf_KpWpCxFc5Zvwq5Z";
+            string apiUrl = AppConstants.EnvironmentVariables.ApiNews.Url
+                + AppConstants.EnvironmentVariables.ApiNews.Key;
 
-            HttpResponseMessage response = await _httpClient.GetAsync(apiUrl + apiKey);
+            HttpResponseMessage response = await _httpClient.GetAsync(apiUrl);
 
             if (response.IsSuccessStatusCode)
             {
@@ -34,14 +34,12 @@ public class ApiService : IApiService
             }
             else
             {
-                // Handle error response
                 Console.WriteLine("Error: " + response.StatusCode);
                 return null;
             }
         }
         catch (Exception ex)
         {
-            // Handle exception
             Console.WriteLine("Exception: " + ex.Message);
             return null;
         }

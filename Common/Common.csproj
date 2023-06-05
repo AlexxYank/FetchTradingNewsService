@@ -25,10 +25,12 @@
     <None Remove="DTOs\" />
     <None Remove="DTOs\Responses\" />
     <None Remove="Helpers\" />
+    <None Remove="Constants\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DTOs\" />
     <Folder Include="DTOs\Responses\" />
     <Folder Include="Helpers\" />
+    <Folder Include="Constants\" />
   </ItemGroup>
 </Project>

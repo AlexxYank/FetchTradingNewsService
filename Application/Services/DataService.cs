@@ -18,7 +18,7 @@ public class DataService : IDataService
 
     public async Task FetchAndStoreData()
     {
-        var response = await this._apiService.GetDataFromApi();
+        var response = await this._apiService.FetchDataFromApi();
 
         var rootResponse = JsonHelper.DeserializeJson(response);
 
