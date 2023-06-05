@@ -20,6 +20,18 @@ This solution provides components and services for fetching trading news, enrich
 2. The `DataService` fetches data from the API, enriches it, and stores it in the configured database.
 3. The `NewsBackgroundService` runs in the background and triggers the `DataService` to fetch and store data periodically.
 
+## Pros and Cons
+
+Pros:
+
+Provides a centralized web API for accessing and managing news data
+Separation of concerns with distinct service components
+Easy scalability and extensibility with API endpoints
+Cons:
+
+Requires additional development for API endpoints and authorization
+May require additional setup and configuration for hosting the API
+
 ## Dependencies
 
 - HttpClient: Used for making HTTP requests.
@@ -28,4 +40,5 @@ This solution provides components and services for fetching trading news, enrich
 ## Contributing
 
 Contributions to this solution are welcome. If you encounter any issues or have suggestions, please open an issue or submit a pull request.
+
 
