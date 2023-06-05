@@ -27,6 +27,7 @@ Pros:
 Provides a centralized web API for accessing and managing news data
 Separation of concerns with distinct service components
 Easy scalability and extensibility with API endpoints
+
 Cons:
 
 Requires additional development for API endpoints and authorization
