@@ -39,8 +39,15 @@ Cons:
 - HttpClient: Used for making HTTP requests.
 - Entity Framework Core: Used for database operations.
 
-## Contributing
+## Task list with high-level estimations (hours or man-days):
 
-Contributions to this solution are welcome. If you encounter any issues or have suggestions, please open an issue or submit a pull request.
+- Set up the FetchTradingNewsService project structure and dependencies (1 day).
+- Create Entities, Database connection and migrations (4 hours).
+- Create Json and Mapper Helper classes (4 hours).
+- Implement the ApiService to fetch trading news data from the provider (2 hours).
+- Implement the DataService to enrich and store the fetched data in the database (2 hours).
+- Create the NewsBackgroundService to execute regular data fetch in the background (2 hours).
+- Test and debug the API endpoints and services (4 hours).
+
 
 
