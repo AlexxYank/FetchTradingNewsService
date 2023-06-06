@@ -8,7 +8,7 @@ public static class ConnectionString
 
     private static string DatabasePort = "";
 
-    private static string DatabaseName = "";
+    private static string DatabaseName = "TradingNews";
 
     private static string DatabaseUser = "";
 
