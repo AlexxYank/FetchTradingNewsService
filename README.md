@@ -49,5 +49,7 @@ Cons:
 - Create the NewsBackgroundService to execute regular data fetch in the background (2 hours).
 - Test and debug the API endpoints and services (4 hours).
 
-
+## TODO
+- Unit Tests
+- Logger
 
